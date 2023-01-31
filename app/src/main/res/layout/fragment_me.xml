@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MeFragment">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/LinearLayoutForMe"
+       android:orientation="vertical"
+      >
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/SVForMe"
+          android:paddingLeft="10sp"
+          android:paddingRight="10sp"
+          android:scrollbars="none">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+
+
+
+         <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="35dp"
+          android:id="@+id/LLForMessageImageMe"
+          android:orientation="vertical"
+          >
+
+            <ImageView
+                android:id="@+id/messages_status"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="335dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/messageme"
+
+                />
+
+
+         </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:id="@+id/LLForProfileMe"
+          android:orientation="horizontal"
+
+          >
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:layout_width="65dp"
+             android:layout_height="55dp"
+             android:layout_marginStart="10dp"
+            android:src="@drawable/obama"
+            />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Amhad855"
+               />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:text=", Welcome"
+
+               />
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="5dp"
+
+                   />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Invite Code :"
+                android:textSize="17sp"
+
+                />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:text="1044175"
+                   android:textSize="17sp"
+
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:text=" Copy"
+                   android:textSize="17sp"
+
+                   />
+
+            </LinearLayout>
+         </LinearLayout>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:id="@+id/LLForAccountBalanceMe"
+          android:orientation="vertical"
+          android:background="@color/white"
+          >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Balance"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+           />
+
+            <ImageButton
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="22dp"
+                android:layout_height="18dp"
+               android:src="@drawable/ic_baseline_remove_red_eye_24"
+               />
+
+            <ImageButton
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_baseline_refresh_24"
+                />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:orientation="horizontal"
+             android:weightSum="100"
+             >
+
+            <LinearLayout
+                android:layout_weight="50"
+                android:background="@color/white"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                  android:text="3"
+                   android:textSize="20sp"
+                  />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50dp"
+                >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="100"
+
+                   >
+                  <Button
+                      android:layout_weight="50"
+                      android:text="Recharge"
+                      android:layout_marginEnd="5dp"
+                      android:textAllCaps="false"
+                      android:textSize="12sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:backgroundTint="@color/yellow"
+                      android:background="@drawable/button_background"
+                      />
+                  <Button
+                      android:layout_weight="50"
+                      android:text="Get Order"
+                      android:textAllCaps="false"
+                      android:textSize="12sp"
+
+                      android:layout_width="match_parent"
+                      android:background="@drawable/button_background"
+                      android:layout_height="wrap_content"
+                      />
+
+               </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:orientation="horizontal"
+             android:weightSum="90"
+             android:layout_marginTop="5dp"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="30"
+                android:orientation="vertical"
+                >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="0"
+                   android:textSize="23sp"
+                   android:textAlignment="center"
+
+                  />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Commission to ..."
+                   android:textAlignment="center"
+
+                   />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="30"
+
+                >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:layout_weight="30"
+                   android:orientation="vertical"
+                   >
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="0"
+                      android:textSize="23sp"
+                      android:textAlignment="center"
+
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Reviewing"
+                      android:textAlignment="center"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="30"
+
+                >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:layout_weight="30"
+                   android:orientation="vertical"
+                   >
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="3"
+                      android:textSize="23sp"
+                      android:textAlignment="center"
+
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Account Balance"
+                      android:textAlignment="center"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+         </LinearLayout>
+
+         </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/LLForAccountCardsMe"
+          android:orientation="vertical"
+          >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/LLForAccountCard1Me"
+             android:weightSum="90"
+             android:layout_marginTop="15dp"
+             android:orientation="horizontal"
+             >
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_width="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                  >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                     android:src="@drawable/my_order"
+
+                     />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="My Order"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe2"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/account_details"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Account Details"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe3"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/messages"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Wallet"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+         </LinearLayout>
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/LLForAccountCard2Me"
+             android:weightSum="90"
+             android:layout_marginTop="15dp"
+             android:orientation="horizontal"
+             >
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/invite_friends"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Invite Friends"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe5"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/promotions"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:textSize="14sp"
+                      android:text="Promotion Tutorials"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe6"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/team_report"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Team Report"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/LLForAccountCard3Me"
+             android:weightSum="90"
+             android:layout_marginTop="15dp"
+             android:orientation="horizontal"
+             >
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe7"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/messageme"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Message"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe8"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/system_announcement"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:textSize="14sp"
+                      android:text="System Announcement"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe9"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/about_us_logo"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="About Us"
+
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+         </LinearLayout>
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/LLForAccountCard4Me"
+             android:weightSum="90"
+             android:layout_marginTop="15dp"
+             android:orientation="horizontal"
+             >
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe10"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/rules_and_regulations"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:textSize="14sp"
+                      android:text="Rules and Regulations"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe11"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/agent_cooperation"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:textSize="14sp"
+                      android:text="Agent   Cooperation"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe12"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/wheel_of_fortune"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:textSize="14sp"
+                      android:text="Recharge Promotion"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+         </LinearLayout>
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/LLForAccountCard5Me"
+             android:weightSum="90"
+             android:layout_marginTop="15dp"
+             android:orientation="horizontal"
+             >
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cardViewMe13"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/settings"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Setting"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe14"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/trial_bonus"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Trial Bonus"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="30"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/cardViewMe15"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/wheel_of_fortune"
+
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:layout_marginTop="5dp"
+                      android:textSize="14sp"
+                      android:text="Wheel Of Fortune"
+                      android:src="@drawable/messages"
+
+                      />
+
+
+
+               </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+         </LinearLayout>
+
+
+
+
+      </LinearLayout>
+         </LinearLayout>
+
+      </ScrollView>
+
+
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>

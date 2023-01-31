@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/productNameMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Wolt-PT"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/messages_status"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/messageme"
+        android:paddingLeft="20sp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productNameMain"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/LLCardViews"
+            android:layout_below="@+id/cardViewSlideShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/productNameMain"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/cardViewSlideShow"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_period="3000"
+                        app:iss_placeholder="@color/black"
+                        app:iss_error_image="@color/purple_700"
+                        app:iss_corner_radius="20"
+                        app:iss_delay="0"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/LinearLayoutForCardView1"
+                android:orientation="horizontal"
+
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="75dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/cardView1"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="75dp"
+                            android:text="About us"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="6dp"
+                            android:foregroundGravity="center"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/about_us_logo"
+                            android:layout_marginTop="20dp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_alignStart="@id/cardView1"
+                    android:layout_alignEnd="@+id/cardView3"
+                    android:layout_width="125dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/cardView2"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="75dp"
+                            android:text="Rules and Regulations"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="6dp"
+                            android:foregroundGravity="center"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/rules_and_regulations"
+                            android:layout_marginTop="20dp"
+                            />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/cardView3"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="75dp"
+                            android:text="Agent Cooperation"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="6dp"
+                            android:foregroundGravity="center"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/agent_cooperation"
+                            android:layout_marginTop="20dp"
+                            />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/LinearLayoutForCardView2"
+                android:orientation="horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/cardView4"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardElevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="75dp"
+                            android:text="Promotions"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="6dp"
+                            android:foregroundGravity="center"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/promotions"
+                            android:layout_marginTop="20dp"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/cardView5"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardElevation="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="75dp"
+                            android:text="Invite Friends"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="6dp"
+                            android:foregroundGravity="center"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/invite_friends"
+                            android:layout_marginTop="20dp"
+                            />
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayoutForButtons"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/recharge"
+                    android:background="@drawable/button_background"
+                    app:backgroundTint="@color/dodger_blue"
+                    android:layout_marginStart="10dp"
+                    android:text="Recharge"
+                    android:layout_marginEnd="10dp"
+                    android:textAllCaps="false"
+
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="WithDrawl"
+                    app:backgroundTint="@color/dodger_blue"
+                    android:id="@+id/withDrawl"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_background"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayoutForCards"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:background="@color/dark_white"
+                android:layout_marginTop="15dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow1"
+                    app:cardBackgroundColor="@color/light_cyan"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV1"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats"
+                                />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:id="@+id/uberEatsTVCoins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow2"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV2"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayoutForCards2"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow3"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV3"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow4"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV4"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayoutForCards3"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow5"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV5"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow6"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV6"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV66"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayoutForCards4"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow7"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV7"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV77"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow8"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV8"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV88"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinearLayoutForCards5"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow9"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV9"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV99"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:padding="18dp"
+                    android:id="@+id/cardViewBelow10"
+                    app:cardBackgroundColor="@color/gray"
+                    android:layout_width="125dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="50"
+                    android:background="@color/lavender"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/uberEatsTV10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Uber Eats-VIP1"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/uberEatsTV10"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:foregroundGravity="center"
+                                android:src="@drawable/uber_eats" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Commission : 0.65%"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:textSize="12sp"
+
+                                    />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                android:id="@+id/uberEatsTV1010"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15orders/vip1/"
+                                android:textSize="12sp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/coin"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textSize="12sp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

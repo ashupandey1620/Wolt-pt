@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="260dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/SignUpEmail"
+            android:layout_height="wrap_content"
+            android:hint="enter_email"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconTint="@color/black"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:id="@+id/eSignUpEmail"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/SignInPassword"
+            android:layout_height="wrap_content"
+            android:hint="enter_your_password"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/loginEmail"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="15dp"
+            app:endIconTint="@color/black"
+            app:endIconMode="password_toggle"
+            app:startIconTint="@color/black"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:id="@+id/eSignUpPassword"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/SignInConfirmPassword"
+            android:layout_height="wrap_content"
+            android:hint="confirm_your_password"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/SignUpPassword"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginTop="15dp"
+            app:endIconTint="@color/black"
+            app:endIconMode="password_toggle"
+            app:startIconTint="@color/black"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:id="@+id/eSignUpConfirmPassword"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SignInConfirmPassword"
+            android:layout_marginTop="15dp"
+            android:id="@+id/SignUpButton"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="sign_up"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@color/main_blue"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:id="@+id/LanguageTV"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginStart="18dp"
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:id="@+id/RegisterAccountTV"
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Log In Page"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginStart="18dp"
+                android:textColor="@color/red"
+                />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:id="@+id/signUpProgressBar"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RechargeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rechargeFragmentLL"
+        >
+    <TextView
+        android:id="@+id/rechargeFragmentHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Recharge"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rechargeFragmentLL"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Recharge Channel"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/purple_500"
+
+            >
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Select Recharge Channel"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/purple_500"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wolt's offline self-service top-up, the submission order processing time will be reviewed within 1 hour."
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wolt's online fast recharge, submit order processing time review within 10 minutes."
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please pay attention to check the member account balance."
+           android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If the recharge fails, please contact customer service"
+          android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
