@@ -132,8 +132,13 @@
 
             </LinearLayout>
          </LinearLayout>
-
       </LinearLayout>
+
+
+
+
+
+
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="150dp"
@@ -233,6 +238,7 @@
                       android:text="Get Order"
                       android:textAllCaps="false"
                       android:textSize="12sp"
+                      app:backgroundTint="@color/dodger_blue"
 
                       android:layout_width="match_parent"
                       android:background="@drawable/button_background"
@@ -388,7 +394,7 @@
 
          <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="100dp"
              android:id="@+id/LLForAccountCard1Me"
              android:weightSum="90"
              android:layout_marginTop="15dp"
@@ -397,7 +403,8 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
-                app:cardBackgroundColor="@color/light_cyan"
+                android:layout_marginTop="5dp"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -444,12 +451,13 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
                 android:layout_alignParentLeft="true"
                 android:id="@+id/cardViewMe2"
                 app:cardCornerRadius="20dp"
@@ -488,7 +496,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
                 android:layout_width="20dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginTop="5dp"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
@@ -538,10 +547,10 @@
 
          <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="95dp"
              android:id="@+id/LLForAccountCard2Me"
              android:weightSum="90"
-             android:layout_marginTop="15dp"
+
              android:orientation="horizontal"
              >
 
@@ -549,7 +558,7 @@
                 android:layout_weight="30"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_alignParentTop="true"
@@ -592,7 +601,7 @@
                 android:layout_weight="30"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_alignParentTop="true"
@@ -633,7 +642,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
                 android:layout_width="20dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="5dp"
@@ -678,16 +687,15 @@
 
          <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="95dp"
              android:id="@+id/LLForAccountCard3Me"
              android:weightSum="90"
-             android:layout_marginTop="15dp"
              android:orientation="horizontal"
              >
 
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
@@ -733,7 +741,7 @@
                 android:layout_width="20dp"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -773,7 +781,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
                 android:layout_width="20dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
@@ -823,10 +831,9 @@
 
          <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="100dp"
              android:id="@+id/LLForAccountCard4Me"
              android:weightSum="90"
-             android:layout_marginTop="15dp"
              android:orientation="horizontal"
              >
 
@@ -834,7 +841,7 @@
                 android:layout_weight="30"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_alignParentTop="true"
@@ -874,7 +881,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
@@ -919,7 +926,7 @@
                 android:layout_weight="30"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="5dp"
@@ -967,10 +974,9 @@
 
          <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="95dp"
              android:id="@+id/LLForAccountCard5Me"
              android:weightSum="90"
-             android:layout_marginTop="15dp"
              android:orientation="horizontal"
              >
 
@@ -978,7 +984,7 @@
                 android:layout_weight="30"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_alignParentTop="true"
@@ -1019,7 +1025,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_weight="30"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
                 android:layout_alignParentTop="true"
@@ -1064,7 +1070,7 @@
                 android:layout_weight="30"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                app:cardBackgroundColor="@color/light_cyan"
+                app:cardBackgroundColor="@color/white"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="5dp"

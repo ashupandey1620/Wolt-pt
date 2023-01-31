@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:elevation="20dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="Recharge"
@@ -46,7 +47,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:orientation="horizontal"
             >
 
@@ -72,7 +73,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/usdt"
-                android:layout_marginTop="52.5dp"
+                android:layout_marginTop="42.5dp"
                 android:layout_marginStart="10dp"
                 />
             <TextView
@@ -81,7 +82,7 @@
                 android:layout_marginStart="3dp"
                 android:layout_marginEnd="3dp"
                 android:textColor="@color/white"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="50dp"
                 android:textSize="17sp"
                 android:text="Offline self Service Recharge"
                 />
@@ -93,7 +94,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_alignParentLeft="true"
                         app:cardCornerRadius="20dp"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="50dp"
                         android:layout_marginStart="10dp"
                         app:cardBackgroundColor="@color/orange"
                         app:cardElevation="20dp">
@@ -130,7 +131,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:orientation="horizontal"
             >
 
@@ -156,7 +157,7 @@
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/usdt"
-                        android:layout_marginTop="52.5dp"
+                        android:layout_marginTop="42.5dp"
                         android:layout_marginStart="10dp"
                         />
                     <TextView
@@ -165,7 +166,7 @@
                         android:layout_marginStart="3dp"
                         android:layout_marginEnd="3dp"
                         android:textColor="@color/white"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="50dp"
                         android:textSize="17sp"
                         android:text="Offline self Service Recharge"
                         />
@@ -177,7 +178,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_alignParentLeft="true"
                         app:cardCornerRadius="20dp"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="50dp"
                         android:layout_marginStart="10dp"
                         app:cardBackgroundColor="@color/orange"
                         app:cardElevation="20dp">
@@ -202,7 +203,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Wolt's offline self-service top-up, the submission order processing time will be reviewed within 1 hour."
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
@@ -215,7 +216,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Wolt's online fast recharge, submit order processing time review within 10 minutes."
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
@@ -228,7 +229,7 @@
             android:layout_marginEnd="10dp"
             android:textColor="@color/black"
             android:text="Please pay attention to check the member account balance."
-           android:textSize="12sp"
+           android:textSize="13sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="5dp"
 
@@ -239,7 +240,7 @@
             android:layout_marginEnd="10dp"
             android:layout_height="wrap_content"
             android:text="If the recharge fails, please contact customer service"
-          android:textSize="12sp"
+          android:textSize="13sp"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="5dp"
 

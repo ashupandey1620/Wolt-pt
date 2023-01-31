@@ -21,7 +21,7 @@ public class PromotionsActivity extends AppCompatActivity {
         webSettings.setBuiltInZoomControls(true);
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new Callback());
-        webView.loadUrl("file:///assets/test.html");
+        webView.loadUrl("https://atifsoftwares.blogspot.com");
     }
 
     public class Callback extends WebViewClient

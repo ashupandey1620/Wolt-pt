@@ -11,11 +11,18 @@ import android.widget.Button;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
+
+import java.util.ArrayList;
+
 public class HomeFragment extends Fragment {
 
     private CardView aboutUs,rulesAndRegulations,AgentCooperation,promotions,inviteFriends;
     private Button recharge,withDrawl;
     private CardView CV1;
+    private ImageSlider imageSlider;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -23,6 +30,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_home, container, false);;
+
+        imageSlider = v.findViewById(R.id.image_slider);
 
         aboutUs = v.findViewById(R.id.cardView1);
         rulesAndRegulations = v.findViewById(R.id.cardView2);
@@ -36,7 +45,28 @@ public class HomeFragment extends Fragment {
 
 
 
-        CV1 = v.findViewById(R.id. cardViewBelow1);
+        CV1 = v.findViewById(R.id.cardViewBelow1);
+
+
+        ArrayList<SlideModel> slideModel = new ArrayList<>();
+        slideModel.add(new SlideModel(R.drawable.pic_3, ScaleTypes.FIT));
+        slideModel.add(new SlideModel(R.drawable.pic_2, ScaleTypes.FIT));
+        slideModel.add(new SlideModel(R.drawable.pic_1, ScaleTypes.FIT));
+
+
+
+
+        imageSlider.setImageList(slideModel,ScaleTypes.FIT);
+
+
+
+
+
+
+
+
+
+
 
         aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override

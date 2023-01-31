@@ -68,11 +68,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         app:iss_auto_cycle="true"
-                        app:iss_period="3000"
+                        app:iss_period="4000"
                         app:iss_placeholder="@color/black"
                         app:iss_error_image="@color/purple_700"
                         app:iss_corner_radius="20"
-                        app:iss_delay="0"/>
+                        app:iss_delay="1000"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -335,7 +335,6 @@
                 android:id="@+id/LinearLayoutForCards"
                 android:orientation="horizontal"
                 android:weightSum="100"
-                android:background="@color/dark_white"
                 android:layout_marginTop="15dp"
                 >
 
@@ -345,6 +344,7 @@
                     app:cardBackgroundColor="@color/light_cyan"
                     android:layout_width="125dp"
                     android:layout_height="135dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
@@ -451,6 +451,7 @@
                     android:padding="18dp"
                     android:id="@+id/cardViewBelow2"
                     app:cardBackgroundColor="@color/gray"
+                    android:layout_marginStart="5dp"
                     android:layout_width="125dp"
                     android:layout_height="135dp"
                     android:layout_alignParentLeft="true"
@@ -576,6 +577,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
                     android:background="@color/lavender"
+                    android:layout_marginEnd="5dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
                     <LinearLayout
@@ -683,6 +685,7 @@
                     android:layout_weight="50"
                     android:background="@color/lavender"
                     app:cardCornerRadius="20dp"
+                    android:layout_marginStart="5dp"
                     app:cardElevation="20dp">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -798,6 +801,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
                     android:background="@color/lavender"
+                    android:layout_marginEnd="5dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
                     <LinearLayout
@@ -903,6 +907,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
+                    android:layout_marginStart="5dp"
                     android:background="@color/lavender"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
@@ -1021,6 +1026,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
                     android:background="@color/lavender"
+                    android:layout_marginEnd="5dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
                     <LinearLayout
@@ -1125,6 +1131,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
+                    android:layout_marginStart="5dp"
                     android:background="@color/lavender"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
@@ -1241,6 +1248,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
+                    android:layout_marginEnd="5dp"
                     android:background="@color/lavender"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
@@ -1348,6 +1356,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_weight="50"
                     android:background="@color/lavender"
+                    android:layout_marginStart="5dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
                     <LinearLayout
