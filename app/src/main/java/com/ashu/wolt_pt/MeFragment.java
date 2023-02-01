@@ -5,23 +5,39 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class MeFragment extends Fragment {
 
 
-    WebView webView;
+    private ImageView imageMsg;
+    private Button button1,button2;
+    private CircleImageView circleImageView;
     private CardView cardView1,cardView2,cardView3,cardView4,cardView5,cardView6,cardView7,cardView8,cardView9,cardView10,cardView11,cardView12,cardView13,cardView14,cardView15;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_me, container, false);
+
+
+
+        imageMsg = v.findViewById(R.id.messages_status);
+        circleImageView = v.findViewById(R.id.imageProfile);
+
+        button1 = v.findViewById(R.id.rechargeMe);
+        button2 = v.findViewById(R.id.withDrawlMe);
+
+
+
         cardView1 = v.findViewById(R.id.cardViewMe1);
         cardView2 = v.findViewById(R.id.cardViewMe2);
         cardView3 = v.findViewById(R.id.cardViewMe3);
@@ -38,6 +54,43 @@ public class MeFragment extends Fragment {
         cardView14 = v.findViewById(R.id.cardViewMe14);
         cardView15 = v.findViewById(R.id.cardViewMe15);
 
+
+
+
+
+        imageMsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),MessagesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),ProfileImageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),WithdrawlApplication.class);
+                startActivity(intent);
+            }
+        });
 
 
 
