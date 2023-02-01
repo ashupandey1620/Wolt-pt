@@ -63,6 +63,7 @@
          <de.hdodenhof.circleimageview.CircleImageView
              android:layout_width="65dp"
              android:layout_height="55dp"
+             android:id="@+id/imageProfile"
              android:layout_marginStart="10dp"
             android:src="@drawable/obama"
             />
@@ -122,6 +123,7 @@
                    />
 
                <TextView
+                   android:id="@+id/Copy"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_marginTop="5dp"
@@ -163,6 +165,7 @@
            />
 
             <ImageButton
+                android:id="@+id/eye"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_width="22dp"
@@ -171,6 +174,7 @@
                />
 
             <ImageButton
+                android:id="@+id/refresh"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_width="18dp"
@@ -223,6 +227,7 @@
 
                    >
                   <Button
+                      android:id="@+id/rechargeMe"
                       android:layout_weight="50"
                       android:text="Recharge"
                       android:layout_marginEnd="5dp"
@@ -234,8 +239,9 @@
                       android:background="@drawable/button_background"
                       />
                   <Button
+                      android:id="@+id/withDrawlMe"
                       android:layout_weight="50"
-                      android:text="Get Order"
+                      android:text="WithDrawl"
                       android:textAllCaps="false"
                       android:textSize="12sp"
                       app:backgroundTint="@color/dodger_blue"

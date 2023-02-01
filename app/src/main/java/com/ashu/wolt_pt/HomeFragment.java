@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -23,6 +24,7 @@ public class HomeFragment extends Fragment {
     private Button recharge,withDrawl;
     private CardView CV1;
     private ImageSlider imageSlider;
+    private ImageView  messages;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +33,7 @@ public class HomeFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_home, container, false);;
 
+        messages = v.findViewById(R.id.messages_status);
         imageSlider = v.findViewById(R.id.image_slider);
 
         aboutUs = v.findViewById(R.id.cardView1);
@@ -64,6 +67,13 @@ public class HomeFragment extends Fragment {
 
 
 
+        messages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MessagesActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -114,16 +124,12 @@ public class HomeFragment extends Fragment {
         });
 
 
-        recharge.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         withDrawl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WithdrawlApplication.class);
+                startActivity(intent);
 
             }
         });
