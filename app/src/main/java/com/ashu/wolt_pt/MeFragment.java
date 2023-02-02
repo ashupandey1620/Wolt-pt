@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -80,6 +81,10 @@ public class MeFragment extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Fragment fragment = new RechargeFragment();
+
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.container,fragment).commit();
 
             }
         });
@@ -94,7 +99,18 @@ public class MeFragment extends Fragment {
 
 
 
-        //cardView1
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new OrderFragment();
+
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.container,fragment).commit();
+
+
+
+            }
+        });
 
 
 
@@ -195,7 +211,18 @@ public class MeFragment extends Fragment {
 
 
 
+        cardView12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new RechargeFragment();
 
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.container,fragment).commit();
+
+
+
+            }
+        });
 
 
 
