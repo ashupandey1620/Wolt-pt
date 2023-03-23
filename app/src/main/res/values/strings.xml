@@ -16,4 +16,24 @@
     <string name="the_amount_of_unlocked_yelp_vip2_account_must_be_greater_than_100_please_go_to_top_up">The amount of unlocked (Yelp-VIP2) account must be greater than 100, please go to top up</string>
     <string name="cancel">Cancel</string>
     <string name="top_up_now">Top-up now</string>
+    <string name="order_center">Order Center</string>
+    <string name="uber_eats_vip1">Uber Eats-VIP1</string>
+    <string name="commission_for_completing_the_order_0_65">Commission for Completing the Order:0.65%</string>
+    <string name="click_the_get_order_button_below_to_get_order_randomly">Click the Get Order Button below to get order randomly</string>
+    <string name="total_orders_quantity">Total Orders Quantity :</string>
+    <string name="_15">15</string>
+    <string name="recharge">Recharge</string>
+    <string name="get_order">Get Order</string>
+    <string name="balance_status">Balance status</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="_3">3</string>
+    <string name="reviewing">Reviewing</string>
+    <string name="_0">0</string>
+    <string name="commission_today">Commission Today</string>
+    <string name="_0__">0</string>
+    <string name="finished_today">Finished Today</string>
+    <string name="_0___">0</string>
+    <string name="yesterday_commission">Yesterday Commission</string>
+    <string name="_">0</string>
+    <string name="team_commission">Team Commission</string>
 </resources>

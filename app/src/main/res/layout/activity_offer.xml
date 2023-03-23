@@ -14,7 +14,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Order Center"
+        android:text="@string/order_center"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />
@@ -32,7 +32,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/orderCenterTVcheck"
             android:orientation="vertical"
           >
 
@@ -40,10 +39,8 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewLL56"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 app:cardBackgroundColor="@color/white"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
                 android:layout_weight="50"
                 android:background="@color/lavender"
                 app:cardCornerRadius="20dp"
@@ -60,7 +57,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:layout_below="@+id/orderCenterTVcheck"
             android:orientation="horizontal"
             android:id="@+id/LLOne"
 
@@ -80,28 +76,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
-                android:layout_below="@+id/orderCenterTV"
                 android:orientation="vertical"
 
                 >
 
                 <TextView
-                    android:layout_alignTop="@+id/orderCenterTV"
                     android:id="@+id/OrderCenterName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Uber Eats-VIP1"
+                    android:text="@string/uber_eats_vip1"
                     android:textSize="18sp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="25dp"
                     />
 
                 <TextView
-                    android:layout_alignTop="@+id/OrderCenterName"
                     android:id="@+id/OrderCenterUnderText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Commission for Completing the Order:0.65%"
+                    android:text="@string/commission_for_completing_the_order_0_65"
                     android:textSize="15sp"
                     android:textColor="@color/red"
                     android:layout_marginStart="8dp"
@@ -112,7 +105,6 @@
         </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/LLOne"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:id="@+id/LLTwo"
@@ -133,7 +125,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:layout_gravity="center"
-                    android:text="Click the Get Order Button below to get order randomly "
+                    android:text="@string/click_the_get_order_button_below_to_get_order_randomly"
                     android:textSize="15sp"
                     android:layout_marginTop="5dp"
                     />
@@ -147,7 +139,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/OrderQualityLL"
-            android:layout_below="@+id/OrderQuantity"
             android:weightSum="100"
             android:layout_marginTop="15dp"
             >
@@ -157,9 +148,8 @@
                 android:id="@+id/OrderQuantityTV1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/LLTwo"
                 android:textAlignment="viewEnd"
-                android:text="Total Orders Quantity :"
+                android:text="@string/total_orders_quantity"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"/>
@@ -170,9 +160,8 @@
                 android:id="@+id/OrderQuantityTV2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/LLTwo"
                 android:textAlignment="textStart"
-                android:text="15"
+                android:text="@string/_15"
                 android:textColor="@color/indian_red"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -185,14 +174,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:id="@+id/OrderCenterButtonsLL"
-                android:layout_below="@+id/OrderQuantity"
                 android:weightSum="100"
                 android:layout_marginTop="15dp"
                 >
                 <Button
                     android:id="@+id/rechargeOC"
                     android:layout_weight="50"
-                    android:text="Recharge"
+                    android:text="@string/recharge"
                     android:padding="15dp"
                     android:textAllCaps="false"
                     android:layout_marginStart="7dp"
@@ -208,7 +196,7 @@
                     android:layout_marginStart="7dp"
                     android:layout_marginEnd="7dp"
                     android:padding="15dp"
-                    android:text="Get Order"
+                    android:text="@string/get_order"
                     app:backgroundTint="@color/dodger_blue"
                     android:textAllCaps="false"
                     android:layout_width="match_parent"
@@ -225,13 +213,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="7dp"
-                android:layout_below="@+id/OrderCenterButtonsLL"
-                >
+                android:layout_marginTop="7dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Balance status"
+                    android:text="@string/balance_status"
                     android:textStyle="bold"
                     android:id="@+id/balanceStatus"
                     android:layout_marginTop="3dp"
@@ -254,8 +240,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         app:cardBackgroundColor="@color/light_cyan"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_weight="50"
@@ -271,7 +255,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Account Balance"
+                                android:text="@string/account_balance"
                                 android:paddingTop="10dp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
@@ -283,7 +267,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="3"
+                                android:text="@string/_3"
                                 android:textColor="@color/dodger_blue"
                                 android:textSize="24sp"
                                 android:paddingTop="10dp"
@@ -310,8 +294,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         app:cardBackgroundColor="@color/light_cyan"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_weight="50"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
@@ -328,7 +310,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Reviewing"
+                                android:text="@string/reviewing"
                                 android:textStyle="bold"
                                 android:paddingTop="10dp"
                                 android:textAlignment="center"
@@ -340,7 +322,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/_0"
                                 android:textSize="24sp"
                                 android:textColor="@color/dodger_blue"
                                 android:paddingTop="10dp"
@@ -377,8 +359,6 @@
                         android:layout_height="120dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_weight="50"
                         android:background="@color/lavender"
                         app:cardCornerRadius="20dp"
@@ -392,7 +372,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Commission Today"
+                                android:text="@string/commission_today"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:paddingTop="10dp"
@@ -403,7 +383,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/_0__"
                                 android:textSize="24sp"
                                 android:textColor="@color/dodger_blue"
                                 android:paddingTop="10dp"
@@ -428,8 +408,6 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         app:cardBackgroundColor="@color/light_cyan"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_weight="50"
                         android:background="@color/lavender"
                         app:cardCornerRadius="20dp"
@@ -444,7 +422,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Finished Today"
+                                android:text="@string/finished_today"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:paddingTop="10dp"
@@ -455,7 +433,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/_0___"
                                 android:textSize="24sp"
                                 android:textColor="@color/dodger_blue"
                                 android:paddingTop="10dp"
@@ -493,8 +471,6 @@
                         app:cardBackgroundColor="@color/light_cyan"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_weight="50"
                         android:background="@color/lavender"
                         app:cardCornerRadius="20dp"
@@ -508,7 +484,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Yesterday Commission"
+                                android:text="@string/yesterday_commission"
                                 android:paddingTop="10dp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
@@ -519,7 +495,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/_"
                                 android:textSize="24sp"
                                 android:paddingTop="10dp"
                                 android:textStyle="bold"
@@ -543,8 +519,6 @@
                         app:cardBackgroundColor="@color/light_cyan"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
                         android:layout_weight="50"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
@@ -561,7 +535,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Team Commission"
+                                android:text="@string/team_commission"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
                                 android:paddingTop="10dp"
@@ -572,7 +546,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="0"
+                                android:text="@string/_0"
                                 android:textColor="@color/dodger_blue"
                                 android:textSize="24sp"
                                 android:paddingTop="10dp"
