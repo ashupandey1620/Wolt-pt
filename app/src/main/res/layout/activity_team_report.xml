@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Team Report"
+        android:text="@string/team_report"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />

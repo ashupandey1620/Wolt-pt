@@ -43,4 +43,5 @@
     <string name="confirm_your_password">confirm_your_password</string>
     <string name="sign_up">sign_up</string>
     <string name="log_in_page">Log In Page</string>
+    <string name="team_report">Team Report</string>
 </resources>
