@@ -14,7 +14,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Wolt-PT"
+        android:text="@string/wolt_pt"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />
@@ -25,7 +25,7 @@
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
         android:src="@drawable/messageme"
-        android:paddingLeft="20sp"
+        android:paddingStart="20sp"
         android:paddingTop="3dp"
         android:paddingBottom="3dp"
 
@@ -42,13 +42,11 @@
         android:scrollbars="none">
         <LinearLayout
             android:id="@+id/LLCardViews"
-            android:layout_below="@+id/cardViewSlideShow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_below="@+id/productNameMain"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginStart="16dp"
@@ -96,8 +94,6 @@
                     android:layout_width="125dp"
                     android:layout_height="75dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
                     android:id="@+id/cardView1"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
@@ -110,7 +106,7 @@
                         <TextView
                             android:layout_width="80dp"
                             android:layout_height="75dp"
-                            android:text="About us"
+                            android:text="@string/about_us"
                             android:textStyle="bold"
                             android:textSize="14sp"
                             android:gravity="center"
@@ -121,7 +117,7 @@
                             android:layout_height="35dp"
                             android:layout_marginEnd="6dp"
                             android:foregroundGravity="center"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:src="@drawable/about_us_logo"
                             android:layout_marginTop="20dp"
                             />
@@ -133,13 +129,10 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_alignStart="@id/cardView1"
-                    android:layout_alignEnd="@+id/cardView3"
                     android:layout_width="125dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="30"
                     android:layout_height="75dp"
-                    android:layout_alignParentTop="true"
                     android:id="@+id/cardView2"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
@@ -151,7 +144,7 @@
                         <TextView
                             android:layout_width="80dp"
                             android:layout_height="75dp"
-                            android:text="Rules and Regulations"
+                            android:text="@string/rules_and_regulations"
                             android:textStyle="bold"
                             android:textSize="14sp"
                             android:gravity="center"
@@ -162,7 +155,7 @@
                             android:layout_height="35dp"
                             android:layout_marginEnd="6dp"
                             android:foregroundGravity="center"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:src="@drawable/rules_and_regulations"
                             android:layout_marginTop="20dp"
                             />
@@ -176,8 +169,6 @@
                     android:layout_width="125dp"
                     android:layout_height="75dp"
                     android:layout_weight="30"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
                     android:id="@+id/cardView3"
                     android:layout_marginEnd="5dp"
                     app:cardCornerRadius="20dp"
@@ -191,7 +182,7 @@
                         <TextView
                             android:layout_width="80dp"
                             android:layout_height="75dp"
-                            android:text="Agent Cooperation"
+                            android:text="@string/agent_cooperation"
                             android:textStyle="bold"
                             android:textSize="14sp"
                             android:gravity="center"
@@ -201,7 +192,7 @@
                             android:layout_height="35dp"
                             android:layout_marginEnd="6dp"
                             android:foregroundGravity="center"
-                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
                             android:src="@drawable/agent_cooperation"
                             android:layout_marginTop="20dp"
                             />
@@ -223,8 +214,6 @@
                     android:id="@+id/cardView5"
                     android:layout_width="wrap_content"
                     android:layout_height="75dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
                     android:layout_marginEnd="5dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
@@ -239,7 +228,7 @@
                             android:layout_height="75dp"
                             android:gravity="center"
                             android:textAlignment="center"
-                            android:text="Promotions"
+                            android:text="@string/promotions"
                             android:textSize="13sp"
                             android:textStyle="bold" />
 
@@ -259,8 +248,6 @@
                     android:id="@+id/cardView4"
                     android:layout_width="wrap_content"
                     android:layout_height="75dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
 
@@ -274,7 +261,7 @@
                             android:layout_height="75dp"
                             android:gravity="center"
                             android:textAlignment="center"
-                            android:text="Invite Friends"
+                            android:text="@string/invite_friends"
                             android:textSize="13sp"
                             android:textStyle="bold" />
 
@@ -316,7 +303,7 @@
                     android:background="@drawable/button_background"
                     app:backgroundTint="@color/dodger_blue"
                     android:layout_marginStart="10dp"
-                    android:text="Recharge"
+                    android:text="@string/recharge"
                     android:layout_marginEnd="10dp"
                     android:textAllCaps="false"
 
@@ -326,7 +313,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="50"
-                    android:text="WithDrawl"
+                    android:text="@string/withdrawl"
                     app:backgroundTint="@color/dodger_blue"
                     android:id="@+id/withDrawl"
                     android:textAllCaps="false"
@@ -354,8 +341,6 @@
                     android:layout_width="125dp"
                     android:layout_height="135dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
                     android:layout_weight="50"
                     android:background="@color/lavender"
                     app:cardCornerRadius="20dp"
@@ -370,7 +355,7 @@
                             android:id="@+id/uberEatsTV1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Uber Eats-VIP1"
+                            android:text="@string/uber_eats_vip1"
                             android:textSize="15sp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="20dp"
@@ -384,7 +369,6 @@
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
-                                android:layout_below="@+id/uberEatsTV1"
                                 android:layout_marginStart="15dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginEnd="10dp"
@@ -403,14 +387,14 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Commission : 0.65%"
+                                    android:text="@string/commission_0_65"
                                     android:textSize="12sp"
                                     android:layout_marginTop="10dp"
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:text="@string/minimum_unlock_amount_20"
                                     android:textSize="12sp"
 
                                     />
@@ -429,7 +413,7 @@
                                 android:id="@+id/uberEatsTV11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="15orders/vip1/"
+                                android:text="@string/_15orders_vip1"
                                 android:textSize="12sp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="10dp"
@@ -444,7 +428,7 @@
                                 android:id="@+id/uberEatsTVCoins"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="20"
+                                android:text="@string/_20"
                                 android:textSize="12sp"
                                 android:layout_marginStart="2dp"
                                 android:layout_marginTop="10dp"/>
@@ -463,8 +447,6 @@
                     android:layout_marginStart="5dp"
                     android:layout_width="125dp"
                     android:layout_height="135dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
                     android:layout_weight="50"
                     android:background="@color/lavender"
                     app:cardCornerRadius="20dp"
@@ -479,7 +461,7 @@
                             android:id="@+id/uberEatsTV2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Uber Eats-VIP1"
+                            android:text="@string/uber_eats_vip1"
                             android:textSize="15sp"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="20dp"
@@ -493,7 +475,6 @@
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
-                                android:layout_below="@+id/uberEatsTV2"
                                 android:layout_marginStart="15dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginEnd="10dp"
@@ -511,14 +492,14 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Commission : 0.65%"
+                                    android:text="@string/commission_0_65"
                                     android:textSize="12sp"
                                     android:layout_marginTop="10dp"
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Minimum Unlock Amount : 20$"
+                                    android:text="@string/minimum_unlock_amount_20"
                                     android:textSize="12sp"
 
                                     />
@@ -537,7 +518,7 @@
                                 android:id="@+id/uberEatsTV22"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="15orders/vip1/"
+                                android:text="@string/_15orders_vip1"
                                 android:textSize="12sp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="10dp"
@@ -551,7 +532,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="20"
+                                android:text="@string/_20"
                                 android:textSize="12sp"
                                 android:layout_marginStart="2dp"
                                 android:layout_marginTop="10dp"/>

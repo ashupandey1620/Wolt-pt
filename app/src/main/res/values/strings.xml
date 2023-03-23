@@ -44,4 +44,16 @@
     <string name="sign_up">sign_up</string>
     <string name="log_in_page">Log In Page</string>
     <string name="team_report">Team Report</string>
+    <string name="withdrawl_application">WithDrawl Application</string>
+    <string name="wolt_pt">Wolt-PT</string>
+    <string name="about_us">About us</string>
+    <string name="rules_and_regulations">Rules and Regulations</string>
+    <string name="agent_cooperation">Agent Cooperation</string>
+    <string name="promotions">Promotions</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="withdrawl">WithDrawl</string>
+    <string name="commission_0_65">Commission : 0.65%</string>
+    <string name="minimum_unlock_amount_20">Minimum Unlock Amount : 20$</string>
+    <string name="_15orders_vip1">15orders/vip1/</string>
+    <string name="_20">20</string>
 </resources>
