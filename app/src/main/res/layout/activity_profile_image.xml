@@ -12,7 +12,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Profile picture modification"
+        android:text="@string/profile_picture_modification"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />

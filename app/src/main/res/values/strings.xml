@@ -36,4 +36,11 @@
     <string name="yesterday_commission">Yesterday Commission</string>
     <string name="_">0</string>
     <string name="team_commission">Team Commission</string>
+    <string name="profile_picture_modification">Profile picture modification</string>
+    <string name="settings">Settings</string>
+    <string name="enter_email">enter_email</string>
+    <string name="enter_your_password">enter_your_password</string>
+    <string name="confirm_your_password">confirm_your_password</string>
+    <string name="sign_up">sign_up</string>
+    <string name="log_in_page">Log In Page</string>
 </resources>
