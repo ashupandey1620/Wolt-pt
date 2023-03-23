@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -28,7 +28,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:background="@color/white"
-                android:hint="Enter Account"
+                android:hint="@string/enter_account"
                 app:boxCornerRadiusBottomEnd="7dp"
                 app:boxCornerRadiusBottomStart="7dp"
                 app:boxCornerRadiusTopEnd="7dp"
@@ -51,11 +51,10 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:hint="Enter Password"
+                android:hint="@string/enter_password"
                 app:boxCornerRadiusBottomEnd="7dp"
                 app:boxCornerRadiusBottomStart="7dp"
                 app:boxCornerRadiusTopEnd="7dp"
@@ -79,11 +78,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/TVMain"
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginTop="30dp"
-                android:text="Login"
+                android:text="@string/login"
                 android:background="@drawable/button_background"
                 app:backgroundTint="@color/main_blue"
                 android:id="@+id/BtnMainCapture"
@@ -93,7 +91,7 @@
                 android:layout_width="110dp"
                 android:layout_height="50dp"
                 android:id="@+id/downloadButton"
-                android:text="Download APP"
+                android:text="@string/download_app"
                 android:textSize="10sp"
                 android:layout_marginStart="135dp"
                 android:layout_gravity="center"
@@ -117,7 +115,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Language"
+                android:text="@string/language"
                 android:gravity="center"
                 android:layout_weight="50"
                 android:id="@+id/LanguageTV"
@@ -133,7 +131,7 @@
                     android:layout_width="match_parent"
                     android:gravity="center"
                     android:layout_height="wrap_content"
-                    android:text="Register a new Account"
+                    android:text="@string/register_a_new_account"
                     android:textAllCaps="false"
                     android:textStyle="bold"
                     android:layout_marginStart="18dp"

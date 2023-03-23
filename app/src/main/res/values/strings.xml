@@ -4,4 +4,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="account_details">Account Details</string>
     <string name="no_more">No more</string>
+    <string name="enter_account">Enter Account</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="download_app">Download APP</string>
+    <string name="language">Language</string>
+    <string name="register_a_new_account">Register a new Account</string>
 </resources>
