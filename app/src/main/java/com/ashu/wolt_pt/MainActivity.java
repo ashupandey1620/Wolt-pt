@@ -72,31 +72,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //    ImageSlider imageslider = findViewById(R.id.image_slider);
-     //   List<SlideModel> slideModels = new ArrayList<>();
-    //    slideModels.add(new SlideModel(R.drawable.pic_1));
-    //    slideModels.add(new SlideModel(R.drawable.pic_2));
-    //    slideModels.add(new SlideModel(R.drawable.pic_3));
-    //    imageslider.setImageList(slideModels,true);
-
-
-
     }
 }
