@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Account Details"
+        android:text="@string/account_details"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No more"
+        android:text="@string/no_more"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="20sp"
