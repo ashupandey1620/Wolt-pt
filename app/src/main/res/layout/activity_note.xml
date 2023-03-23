@@ -26,9 +26,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="65dp"
                 android:layout_marginEnd="10dp"
-                android:text="The amount of unlocked (Yelp-VIP2) account must be greater than 100, please go to top up"
+                android:text="@string/the_amount_of_unlocked_yelp_vip2_account_must_be_greater_than_100_please_go_to_top_up"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -47,15 +47,13 @@
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 android:layout_height="50dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="25dp"
                 android:background="@drawable/button_background"
-                android:text="Cancel"
+                android:text="@string/cancel"
                 app:backgroundTint="@color/dodger_blue"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
                 <Button
                     android:id="@+id/TopUpBtn"
@@ -65,14 +63,12 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/button_background"
-                    android:text="Top-up now"
+                    android:text="@string/top_up_now"
                     android:textAllCaps="false"
                     android:textColor="#ffffff"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>
 

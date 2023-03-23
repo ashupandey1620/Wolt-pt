@@ -10,4 +10,10 @@
     <string name="download_app">Download APP</string>
     <string name="language">Language</string>
     <string name="register_a_new_account">Register a new Account</string>
+    <string name="information_center">Information Center</string>
+    <string name="my_shares">My Shares</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="the_amount_of_unlocked_yelp_vip2_account_must_be_greater_than_100_please_go_to_top_up">The amount of unlocked (Yelp-VIP2) account must be greater than 100, please go to top up</string>
+    <string name="cancel">Cancel</string>
+    <string name="top_up_now">Top-up now</string>
 </resources>

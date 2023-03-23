@@ -12,7 +12,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Information Center"
+        android:text="@string/information_center"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />

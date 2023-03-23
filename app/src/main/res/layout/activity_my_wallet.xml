@@ -14,7 +14,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:padding="10dp"
-        android:text="My Wallet"
+        android:text="@string/my_wallet"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp" />
