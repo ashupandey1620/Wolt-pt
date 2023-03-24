@@ -87,4 +87,7 @@
     <string name="cumulative_commission">Cumulative Commission *******</string>
     <string name="all">All</string>
     <string name="processing">Processing</string>
+    <string name="review">Review</string>
+    <string name="completed">Completed</string>
+    <string name="review_rejected">Review Rejected</string>
 </resources>
