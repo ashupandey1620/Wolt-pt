@@ -452,7 +452,7 @@
                       android:textAlignment="center"
                       android:layout_marginTop="5dp"
                       android:textSize="14sp"
-                      android:text="My Order"
+                      android:text="@string/my_order"
                       android:src="@drawable/messages"
 
                       />
