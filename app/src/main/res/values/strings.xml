@@ -95,4 +95,6 @@
     <string name="no_more1">No More</string>
     <string name="select_recharge_channel">Select Recharge Channel</string>
     <string name="offline_self_service_recharge">Offline self Service Recharge</string>
+    <string name="_0_5">+0.5%</string>
+    <string name="select_recharge_channel11">Select Recharge Channel</string>
 </resources>

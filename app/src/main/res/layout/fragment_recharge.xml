@@ -99,7 +99,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:textColor="@color/white"
-                            android:text="+0.5%"
+                            android:text="@string/_0_5"
                             android:textAlignment="center"
                             />
 
@@ -116,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:text="Select Recharge Channel"
+            android:text="@string/select_recharge_channel11"
             android:textSize="15sp"
             android:textColor="@color/black"
             android:layout_marginStart="5dp"
@@ -136,8 +136,6 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="5dp"
                 app:cardBackgroundColor="@color/purple_500"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp">
 
