@@ -90,4 +90,6 @@
     <string name="review">Review</string>
     <string name="completed">Completed</string>
     <string name="review_rejected">Review Rejected</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="invalid">Invalid</string>
 </resources>
