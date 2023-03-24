@@ -34,7 +34,7 @@
     <string name="finished_today">Finished Today</string>
     <string name="_0___">0</string>
     <string name="yesterday_commission">Yesterday Commission</string>
-    <string name="_">0</string>
+    <string name="____0">0</string>
     <string name="team_commission">Team Commission</string>
     <string name="profile_picture_modification">Profile picture modification</string>
     <string name="settings">Settings</string>
