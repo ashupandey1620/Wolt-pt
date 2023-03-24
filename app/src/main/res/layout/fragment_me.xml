@@ -77,21 +77,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Amhad855"
+                android:text="@string/amhad855"
                />
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_marginTop="5dp"
-                   android:text=", Welcome"
+                   android:text="@string/welcome"
 
                />
 
                <androidx.cardview.widget.CardView
                    android:layout_width="45dp"
                    android:layout_height="20dp"
-                   android:layout_alignParentTop="true"
-                   android:layout_alignParentLeft="true"
                    app:cardCornerRadius="8dp"
                    android:layout_marginTop="5dp"
                    android:layout_marginStart="10dp"
@@ -103,7 +101,7 @@
                       android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:textColor="@color/white"
-                      android:text="VIP-1"
+                      android:text="@string/vip_1"
                       android:textStyle="italic"
                       android:textAlignment="center"
                       />
@@ -126,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Invite Code :"
+                android:text="@string/invite_code"
                 android:textSize="17sp"
 
                 />
