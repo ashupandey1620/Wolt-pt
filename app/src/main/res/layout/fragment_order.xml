@@ -228,7 +228,7 @@
             android:textAlignment="center"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:layout_below="@+id/LinearLayoutForOrderButtons3"
             android:text="No More" />
 
