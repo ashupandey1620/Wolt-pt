@@ -71,4 +71,7 @@
     <string name="wallet">Wallet</string>
     <string name="invite_friends11">Invite Friends</string>
     <string name="promotion_tutorials">Promotion Tutorials</string>
+    <string name="team_report11">Team Report</string>
+    <string name="message">Message</string>
+    <string name="system_announcement">System Announcement</string>
 </resources>
