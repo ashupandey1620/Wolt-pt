@@ -84,4 +84,7 @@
     <string name="order">Order</string>
     <string name="account_balance111">Account Balance</string>
     <string name="stars">*******</string>
+    <string name="cumulative_commission">Cumulative Commission *******</string>
+    <string name="all">All</string>
+    <string name="processing">Processing</string>
 </resources>
