@@ -98,4 +98,9 @@
     <string name="_0_5">+0.5%</string>
     <string name="select_recharge_channel11">Select Recharge Channel</string>
     <string name="offline_self_service_recharge11">Offline self Service Recharge</string>
+    <string name="_1">+1%</string>
+    <string name="wolt_s_offline_self_service_top_up_the_submission_order_processing_time_will_be_reviewed_within_1_hour">Wolt\'s offline self-service top-up, the submission order processing time will be reviewed within 1 hour.</string>
+    <string name="wolt_s_online_fast_recharge_submit_order_processing_time_review_within_10_minutes">Wolt\'s online fast recharge, submit order processing time review within 10 minutes.</string>
+    <string name="please_pay_attention_to_check_the_member_account_balance">Please pay attention to check the member account balance.</string>
+    <string name="if_the_recharge_fails_please_contact_customer_service">If the recharge fails, please contact customer service</string>
 </resources>
