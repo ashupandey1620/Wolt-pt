@@ -81,4 +81,7 @@
     <string name="setting">Setting</string>
     <string name="trial_bonus">Trial Bonus</string>
     <string name="wheel_of_fortune">Wheel Of Fortune</string>
+    <string name="order">Order</string>
+    <string name="account_balance111">Account Balance</string>
+    <string name="stars">*******</string>
 </resources>
