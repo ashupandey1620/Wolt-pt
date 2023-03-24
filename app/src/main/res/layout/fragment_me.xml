@@ -324,7 +324,7 @@
                 >
 
                <LinearLayout
-                   android:layout_width="match_parent"
+                   android:layout_width="0dp"
                    android:layout_height="60dp"
                    android:layout_weight="30"
                    android:orientation="vertical"
@@ -333,7 +333,7 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="0"
+                      android:text="@string/_0"
                       android:textSize="23sp"
                       android:textAlignment="center"
 
@@ -342,7 +342,7 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="Reviewing"
+                      android:text="@string/reviewing"
                       android:textAlignment="center"
 
                       />
@@ -364,7 +364,7 @@
                 >
 
                <LinearLayout
-                   android:layout_width="match_parent"
+                   android:layout_width="0dp"
                    android:layout_height="60dp"
                    android:layout_weight="30"
                    android:orientation="vertical"
@@ -373,7 +373,7 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="3"
+                      android:text="@string/_31"
                       android:textSize="23sp"
                       android:textAlignment="center"
 
@@ -382,7 +382,7 @@
                   <TextView
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:text="Account Balance"
+                      android:text="@string/account_balance11"
                       android:textAlignment="center"
 
                       />
@@ -430,8 +430,6 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_height="90dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 android:id="@+id/cardViewMe1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp">
