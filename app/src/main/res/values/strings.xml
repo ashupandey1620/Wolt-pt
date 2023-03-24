@@ -68,4 +68,7 @@
     <string name="account_balance11">Account Balance</string>
     <string name="my_order">My Order</string>
     <string name="account_details11">Account Details</string>
+    <string name="wallet">Wallet</string>
+    <string name="invite_friends11">Invite Friends</string>
+    <string name="promotion_tutorials">Promotion Tutorials</string>
 </resources>
