@@ -909,7 +909,7 @@
                       android:layout_height="wrap_content"
                       android:textAlignment="center"
                       android:textSize="14sp"
-                      android:text="Agent   Cooperation"
+                      android:text="@string/agent_cooperation11"
                       android:src="@drawable/messages"
 
                       />
@@ -926,8 +926,6 @@
                 android:layout_width="20dp"
                 android:layout_height="90dp"
                 app:cardBackgroundColor="@color/white"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:id="@+id/cardViewMe12"
@@ -953,7 +951,7 @@
                       android:layout_height="wrap_content"
                       android:textAlignment="center"
                       android:textSize="14sp"
-                      android:text="Recharge Promotion"
+                      android:text="@string/recharge_promotion"
                       android:src="@drawable/messages"
 
                       />
@@ -986,8 +984,6 @@
                 app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 android:id="@+id/cardViewMe13"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp">
@@ -1010,7 +1006,7 @@
                       android:textAlignment="center"
                       android:layout_marginTop="5dp"
                       android:textSize="14sp"
-                      android:text="Setting"
+                      android:text="@string/setting"
                       android:src="@drawable/messages"
 
                       />
@@ -1027,8 +1023,6 @@
                 app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:id="@+id/cardViewMe14"
@@ -1053,7 +1047,7 @@
                       android:textAlignment="center"
                       android:layout_marginTop="5dp"
                       android:textSize="14sp"
-                      android:text="Trial Bonus"
+                      android:text="@string/trial_bonus"
                       android:src="@drawable/messages"
 
                       />

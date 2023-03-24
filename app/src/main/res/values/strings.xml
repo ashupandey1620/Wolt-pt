@@ -76,4 +76,8 @@
     <string name="system_announcement">System Announcement</string>
     <string name="about_us11">About Us</string>
     <string name="rules_and_regulations11">Rules and Regulations</string>
+    <string name="agent_cooperation11">Agent Cooperation</string>
+    <string name="recharge_promotion">Recharge Promotion</string>
+    <string name="setting">Setting</string>
+    <string name="trial_bonus">Trial Bonus</string>
 </resources>
