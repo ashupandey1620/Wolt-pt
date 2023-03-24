@@ -93,4 +93,5 @@
     <string name="cancelled">Cancelled</string>
     <string name="invalid">Invalid</string>
     <string name="no_more1">No More</string>
+    <string name="select_recharge_channel">Select Recharge Channel</string>
 </resources>
