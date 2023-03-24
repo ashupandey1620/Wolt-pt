@@ -812,7 +812,7 @@
                       android:textAlignment="center"
                       android:layout_marginTop="5dp"
                       android:textSize="14sp"
-                      android:text="About Us"
+                      android:text="@string/about_us11"
 
 
                       />
@@ -847,8 +847,6 @@
                 app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 android:id="@+id/cardViewMe10"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp">
@@ -870,7 +868,7 @@
                       android:layout_height="wrap_content"
                       android:textAlignment="center"
                       android:textSize="14sp"
-                      android:text="Rules and Regulations"
+                      android:text="@string/rules_and_regulations11"
                       android:src="@drawable/messages"
 
                       />
@@ -887,8 +885,6 @@
                 app:cardBackgroundColor="@color/white"
                 android:layout_width="20dp"
                 android:layout_height="90dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:id="@+id/cardViewMe11"
