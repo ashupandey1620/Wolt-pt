@@ -167,8 +167,6 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="45dp"
                         android:layout_height="20dp"
-                        android:layout_alignParentTop="1true"
-                        android:layout_alignParentLeft="true"
                         app:cardCornerRadius="8dp"
                         android:layout_marginTop="50dp"
                         android:layout_marginStart="10dp"
