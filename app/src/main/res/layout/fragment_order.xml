@@ -229,7 +229,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:text="No More" />
+            android:text="@string/no_more1" />
 
     </LinearLayout>
 
