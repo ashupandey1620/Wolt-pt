@@ -60,4 +60,8 @@
     <string name="welcome">, Welcome</string>
     <string name="vip_1">VIP-1</string>
     <string name="invite_code">Invite Code :</string>
+    <string name="_1044175">1044175</string>
+    <string name="copy">Copy</string>
+    <string name="account_balance1">Account Balance</string>
+    <string name="commission_to">Commission to ...</string>
 </resources>
