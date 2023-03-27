@@ -260,7 +260,6 @@
                       android:textAllCaps="false"
                       android:textSize="12sp"
                       app:backgroundTint="@color/dodger_blue"
-
                       android:layout_width="match_parent"
                       android:background="@drawable/button_background"
                       android:layout_height="wrap_content"
