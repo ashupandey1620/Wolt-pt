@@ -92,7 +92,7 @@
                 android:layout_height="50dp"
                 android:id="@+id/downloadButton"
                 android:text="@string/download_app"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:layout_marginStart="135dp"
                 android:layout_gravity="center"
                 android:gravity="center"
