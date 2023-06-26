@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:background="@color/wheat"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MeFragment">
 
@@ -247,7 +248,7 @@
                       android:text="@string/recharge"
                       android:layout_marginEnd="5dp"
                       android:textAllCaps="false"
-                      android:textSize="12sp"
+                      android:textSize="11sp"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       app:backgroundTint="@color/yellow"
@@ -258,7 +259,8 @@
                       android:layout_weight="50"
                       android:text="@string/withdrawl"
                       android:textAllCaps="false"
-                      android:textSize="12sp"
+                      android:layout_marginRight="5dp"
+                      android:textSize="11sp"
                       app:backgroundTint="@color/dodger_blue"
                       android:layout_width="match_parent"
                       android:background="@drawable/button_background"
@@ -292,6 +294,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="30"
                 android:orientation="vertical"
+
                 >
 
                <TextView
